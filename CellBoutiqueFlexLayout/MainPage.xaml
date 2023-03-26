@@ -5,6 +5,9 @@
              x:Name="CellBoutiquePage"
              BindingContext="{x:Reference CellBoutiquePage}">
 
+  <VerticalStackLayout>
+    <Label Text="Title"  HorizontalTextAlignment="Center"/>
+
     <ScrollView>
         <FlexLayout
             BindableLayout.ItemsSource="{Binding Products}"
@@ -26,6 +29,8 @@
             </BindableLayout.ItemTemplate>
         </FlexLayout>
     </ScrollView>
+
+  </VerticalStackLayout>
 
 </ContentPage>
 
